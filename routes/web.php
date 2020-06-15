@@ -18,3 +18,10 @@ Route::get('/', function () {
 });
 Route::get('/api/user','UserController@index');
 Route::post('/api/user','UserController@store');
+
+Route::post('/api/register/user', 'LoginController@register');
+Route::post('/api/login/user', 'LoginController@login');
+Route::get('/api/logout/user', 'LoginController@logout');
+
+
+
