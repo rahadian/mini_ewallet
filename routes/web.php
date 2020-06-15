@@ -16,4 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::group(array('prefix'=>'api'),function(){
+    Route::resource('topup','TopupController')->middleware('jwt.verify');
+});
 
