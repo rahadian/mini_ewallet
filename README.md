@@ -11,16 +11,16 @@
 Note: I made this project with nginx as web server and Laradock.
 
 URL API :
+1. /api/register/user
+2. /api/login/user
+3. /api/logout/user
+3. /api/topup
 
-1. /api/provinces
-2. /api/province?searchKey=...
-3. /api/cities
-4. /api/city?searchKey=...
 
 Without Laradock
 
-1. Clone this repo project (```git clone https://github.com/rahadian/arya_wir.git```)
-2. enter to the clone directory (arya_wir) and run this command ```composer install ```
+1. Clone this repo project
+2. enter to the clone directory (mini_ewallet) and run this command ```composer install ```
 3. copy the .env.example and rename it to .env, you can use this command ```cp .env.example .env``` 
 4. run this command to generate key ```php artisan key:generate```
 5. run this command ```sudo chmod -R 777 storage/``` and ```sudo chmod -R 775 bootstrap/``` 
@@ -29,10 +29,11 @@ Without Laradock
 
 With laradock
 
-1. Clone this repo project to your laradock project directory (```git clone https://github.com/rahadian/arya_wir.git```)
+1. Clone this repo project to your laradock project directory 
 2. Don't forget to configure your nginx for laradock, I don't want to mention it how to configure.
-3. enter to the clone directory (arya_wir) and run this command ```composer install ```
+3. enter to the clone directory (mini_ewallet) and run this command ```composer install ```
 4. copy the .env.example and rename it to .env, you can use this command ```cp .env.example .env``` 
 5. run this command to generate key ```php artisan key:generate```
 6. run this command ```chmod -R 777 storage/``` and ```chmod -R 775 bootstrap/```
 7. DONE
+
